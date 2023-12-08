@@ -1,0 +1,51 @@
+ <!-- your-component.component.html 
+<div class="container">
+    <input type="file" (change)="onFileSelected($event)" class="file-input">
+    <button (click)="onUpload()" class="upload-button">Upload</button>
+    <div *ngIf="prediction">
+        <h2>Prediction:</h2>
+        <p>{{ prediction }}</p>
+      </div>
+  </div> -->
+ <!-- app.component.html -->
+
+<!-- app.component.html -->
+
+<!-- app.component.html -->
+<div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="form-group">
+        <div class="preview-zone hidden">
+          <div class="box box-solid">
+            <div class="box-body"></div>
+          </div>
+        </div>
+        <div class="dropzone-wrapper">
+          <div class="dropzone-desc">
+            <i class="glyphicon glyphicon-download-alt"></i>
+            <p>Choose an image file or drag it here.</p>
+          </div>
+          <input type="file" name="img_logo" class="dropzone" (change)="onFileSelected($event)">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <button   class="custom-large-button" (click)="onUpload()">Upload</button>
+    </div>
+  </div>
+</div>
+<div>
+  <!-- <div class="container" *ngIf="prediction">
+  <h2>Prediction:</h2>
+  <p>{{ prediction }}</p>
+  </div> -->
+</div>
+
+
+<script src="assets/app.js"></script>
+</div>
